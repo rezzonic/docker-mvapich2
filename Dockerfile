@@ -3,5 +3,5 @@
 FROM rezzonic/spack
 MAINTAINER rezzonic
 
-RUN $SPACK_ROOT/bin/spack install mvapich2 process_manager=slurm
+RUN $SPACK_ROOT/bin/spack install mvapich2 process_managers=slurm
 RUN /bin/bash -c "source /spack/share/spack/setup-env.sh"
